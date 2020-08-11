@@ -1,0 +1,63 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 80px 500px 150px 150px 150px 150px 180px 150px 180px;
+    
+}
+
+.navbar{
+  grid-column: 1/-1;  
+}
+.logo{
+    height: 70px;
+    width: 270px;
+    margin-bottom: 5px;
+}
+.Carausal{
+    grid-column: 1/-1; 
+    /* background-image: url("https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg"); */
+    background-size: cover;
+    align-items: center;
+}
+
+.carausal_image{
+   
+width:100%;
+height:100%;
+}
+
+.thirdRow-left{
+    grid-column: 1/span 2;
+}
+
+.thirdRow-right
+{
+    grid-column:3/span 2;
+    
+}
+
+.fourth-row{
+    grid-column: 1/span 4;
+}
+
+.fifthRow-left{
+    grid-column: 1/span 3;
+}
+
+.fifthRow-right{
+    grid-column: 4/-1;
+
+}
+
+.sixthRow{
+    grid-column: 1/-1; 
+}
+
+.footer{
+    grid-column: 1/-1; 
+}
+
+
+
+
+
