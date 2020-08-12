@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youth For Seva</title>
     <link rel="stylesheet" href="/css/styles1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ccb3a69650.js" crossorigin="anonymous"></script>
+    <script src="./scroll.js"></script>
 </head>
-<body>
+<body  onscroll="logo_onScroll()">
 <div class="wrapper">
-    <div class="navbar"  style="background-color: pink;">
-    <img class ="logo" src="/images/YFS-Logo.png" alt="logo">
+    <div class="navbar">
+        <img class ="big_logo handle" src="/images/emblem.png" alt="logo">
+        <i class="fa fa-home fa-lg home_logo" aria-hidden="true">hola</i>
     </div>
     <div class="Carausal" style="background-color: grey;">
     <img class = "carausal_image" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg" alt="Car_photo">
@@ -23,4 +27,20 @@
     <div class="footer" style="background-color:violet ;">Footer</div>
 </div>
 </body>
+<script>
+   function logo_onScroll(){
+    if (window.scrollY>30){
+        console.log("yhoo");
+        $("img.big_logo").removeClass("big_logo");
+        $("img.handle").attr("src","/images/YFS-Logo.png");
+        $("img.handle").addClass("logo");
+        
+    } else{
+        $("img.handle").removeClass("logo");
+        $("img.handle").addClass("big_logo");
+        $("img.handle").attr("src","/images/emblem.png");
+        
+    }
+    }
+</script>
 </html>

@@ -6,15 +6,40 @@
 }
 
 .navbar{
-  grid-column: 1/-1;  
+  grid-column: 1/3;  
+  background-color:white;
+  position: fixed;
+  top:0;
+  width:100%;
+  height: 80px;
+
 }
 .logo{
     height: 70px;
-    width: 270px;
+    width: 300px;
     margin-bottom: 5px;
 }
+
+.big_logo{
+    /* background-color: rgba(162, 188, 201, 0.815); */
+    /* background-color: whitesmoke; */
+    margin-left:40px;
+    height: 160px;
+    width: 180px;
+    margin-bottom: 5px;
+    display:inline;
+    border-radius: 45%;
+    /* border-style: groove; */
+}
+
+.home_logo{
+    display: inline;
+    margin-left:20px;
+}
 .Carausal{
+   /* margin-top:30px;  */
     grid-column: 1/-1; 
+    grid-row:2/3;
     /* background-image: url("https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg"); */
     background-size: cover;
     align-items: center;
@@ -28,33 +53,40 @@ height:100%;
 
 .thirdRow-left{
     grid-column: 1/span 2;
+    grid-row:3/4;
 }
 
 .thirdRow-right
 {
     grid-column:3/span 2;
+    grid-row:3/4;
     
 }
 
 .fourth-row{
     grid-column: 1/span 4;
+    grid-row:4/5;
 }
 
 .fifthRow-left{
     grid-column: 1/span 3;
+    grid-row:5/6;
 }
 
 .fifthRow-right{
     grid-column: 4/-1;
+    grid-row:5/6;
 
 }
 
 .sixthRow{
     grid-column: 1/-1; 
+    grid-row:6/7;
 }
 
 .footer{
     grid-column: 1/-1; 
+    grid-row:7/8;
 }
 
 
